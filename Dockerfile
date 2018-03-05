@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/orchief/pshop
+FROM ubuntu:16.04
 
 MAINTAINER turtle "18230373213@163.com"
 
