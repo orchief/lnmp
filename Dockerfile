@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM registry.docker-cn.com/ubuntu:16.04
 
 MAINTAINER turtle "18230373213@163.com"
 
