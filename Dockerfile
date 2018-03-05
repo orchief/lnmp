@@ -3,7 +3,9 @@ FROM ubuntu:16.04
 MAINTAINER turtle "18230373213@163.com"
 
 RUN  apt-get update && \
-        apt-get install -y mysql-server mysql-common && \
+        sudo debconf-set-selections <<< 'mysql-server-5.7 mysql-server/root_password password root'  && \
+        sudo debconf-set-selections <<< 'mysql-server-5.7 mysql-server/root_password_again password root'  && \
+        apt-get install -y mysql-server-5.7 mysql-common && \
         apt-get install -y php && \
         apt-get install -y nginx && \
         apt-get install -y vim
