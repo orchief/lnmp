@@ -2,9 +2,9 @@ FROM ubuntu:16.04
 
 MAINTAINER turtle "18230373213@163.com"
 
+RUN apt-get update
 RUN apt-get -y install mysql-server
-RUN  apt-get update && \
-        apt-get install -y php && \
+RUN apt-get install -y php && \
         apt-get install -y nginx && \
         apt-get install -y vim
 
