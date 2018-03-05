@@ -2,8 +2,7 @@ FROM registry.cn-hangzhou.aliyuncs.com/orchief/pshop
 
 MAINTAINER turtle "18230373213@163.com"
 
-RUN \
-        apt-get update && \
+RUN  apt-get update && \
         apt-get install -y mysql-server mysql-common && \
         apt-get install -y php && \
         apt-get install -y nginx && \
