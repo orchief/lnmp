@@ -1,4 +1,4 @@
-FROM index.tenxcloud.com/tenxcloud/ubuntu:16.04
+FROM mirrors.aliyun.com/ubuntu:16.04
 
 MAINTAINER turtle "18230373213@163.com"
 
